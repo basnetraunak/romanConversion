@@ -2,35 +2,39 @@
 <html>
 <head>
   <title>RomanNumberConversion</title>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="description" content="Free Web tutorials">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="refresh" content="30">
   <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script type= "text/javascript" src ="roman.js" defer></script>
   
 </head>
 <body class="container">
-<!-- input -->
-  <div id="conversion" class="container-fluid align-items-center card">
-    <h3 class="card-title">Card title</h5>
-      <div id="input" class="mb-3 align-items-center card-body">
+  <!-- input -->
+  <div id="conversion" class="my-5 mx-2 container-fluid align-items-center border-secondary card px-auto">
+  <h3 class="card-title my-3">Roman Conversion</h5>
+    <div class="card-body">
+      <div id="input" class="mb-3">
         <label for="number" class="form-label"> Enter the Number: </label>
-        <input id="number" class="container-fluid col-sm-10" name="number" placeholder="Your Number here...">
-        <br> <br>
-        <button id="bttnSubmit" type="submit" value="Submit" class="btn btn-primary btn-lg">Find Roman</button>
-      </div>
-<!--Output-->
-      <div class="container-fluid card-body " id="conversionOutput">
-        <label for="output" class="form-label"> Equivalent Roman Number: </label>
+        <input id="number" class="container-fluid placeholder placeholder-glow row-7 bg-warning" style="color: #370617" name="number" placeholder="Your Number here...">
+        <br> 
         <br>
-        <output id="output" name="output" container ="container-fluid .form-control-plaintext col-sm-10" for="number"></output>
+        <button id="bttnSubmit" type="submit" value="Submit" class="btn btn-primary">Find Roman</button>
       </div>
+      <!--Output-->
+      <div class="container-fluid" style="background-color: #DEE2E6" id="conversionOutput">
+        <label for="output" class=""> Equivalent Roman Number: </label>
+        <br><br>
+        <output id="output" name="output" style="color: #d4a373" for="number"></output>
+        
+      </div>
+    </div>
   </div>
-
+  
   
 </body>
 </html>
